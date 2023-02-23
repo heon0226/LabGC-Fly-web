@@ -1,8 +1,8 @@
 const os = require('os');
 
-// const API_URL = 'http://' + os.hostname() + ':6009';
+const API_URL = 'http://' + os.hostname() + ':6009';
 // const API_URL = 'http://' + '192.168.137.21' + ':6009';
-const API_URL = 'http://' + '192.168.137.10' + ':6009';
+// const API_URL = 'http://' + '192.168.137.10' + ':6009';
 
 
 export const PCR_STATUS        = API_URL + '/api/task/status';

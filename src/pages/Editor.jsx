@@ -61,8 +61,10 @@ const Editor = props => {
             const label = line.label;
             const temp = Number(line.temp).toFixed(0);
             const time = line.time;
-
-            lines.push([label, temp, time].join('\t'))
+            if (label == 'SHOT') 
+                lines.push(label)
+            else 
+                lines.push([label, temp, time].join('\t'))
         });
 
         return lines.join('\r\n');
